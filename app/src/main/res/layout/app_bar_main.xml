@@ -7,12 +7,14 @@
     tools:context=".MainActivity">
 
 
+
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             style="@style/Toolbar"
             app:title="@string/app_name"
             app:elevation="0dp">
         </androidx.appcompat.widget.Toolbar>
+
 
 
     <include layout="@layout/content_main" />

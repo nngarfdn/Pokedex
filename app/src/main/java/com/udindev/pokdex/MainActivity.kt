@@ -8,6 +8,7 @@ import androidx.appcompat.widget.Toolbar
 import androidx.core.view.GravityCompat
 import com.google.android.material.navigation.NavigationView
 import com.udindev.pokdex.databinding.ActivityMainBinding
+import com.udindev.pokdex.ui.home.HomeFragment
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
@@ -29,7 +30,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         nav_view.setNavigationItemSelectedListener(this)
 
         displayScreen(-1)
-//        supportFragmentManager.beginTransaction().replace(R.id.relativelayout, HomeFragment()).commit()
+        supportFragmentManager.beginTransaction().replace(R.id.relativelayout, HomeFragment()).commit()
     }
 
     override fun onBackPressed() {
@@ -64,6 +65,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         binding.drawerLayout.closeDrawer(GravityCompat.START)
         return true
     }
+
 }
 
 
